@@ -1,0 +1,437 @@
+{
+  "market_analysis": {
+    "target_users": [
+      "Agency Owners",
+      "VP of Sales",
+      "Account Executives (AEs)",
+      "Business Development Representatives (BDRs)"
+    ],
+    "daily_responsibilities": [
+      "Executing Account-Based Marketing (ABM) outreach",
+      "Running complex consultative discovery calls",
+      "Mapping enterprise buying committees",
+      "Drafting bespoke high-ticket proposals & SOWs",
+      "Reviewing sales pipeline health and deal velocity",
+      "Briefing delivery teams during project handoff"
+    ],
+    "pain_points": [
+      "Deals stalling in long sales cycles due to unidentified decision makers",
+      "Wasting hours writing custom proposals for unqualified leads",
+      "Information loss when transferring won deals from sales to delivery teams",
+      "Inability to accurately forecast revenue due to weak qualification frameworks",
+      "Price resistance on premium, high-ticket agency services"
+    ],
+    "desired_outcomes": [
+      "Consistent 5 and 6-figure agency deal closures",
+      "Shorter sales cycles with clear deal-progression steps",
+      "Higher win rates through rigorous enterprise-grade qualification",
+      "Seamless client onboarding and delivery alignment",
+      "Predictable pipeline forecasting"
+    ],
+    "revenue_activities": [
+      "Conducting deep discovery sessions",
+      "Presenting value-based pricing proposals",
+      "Overcoming executive stakeholder objections",
+      "Negotiating contract terms and closing deals"
+    ],
+    "software_currently_used": [
+      "HubSpot CRM (Expensive, complex, bloated for boutique agencies)",
+      "Trello (Too simple, lacks relational depth for account-based sales)",
+      "Google Sheets (Clunky, manual, prone to data silos)"
+    ],
+    "workflow_bottlenecks": [
+      "The gap between sales notes and actual scoping/pricing estimation",
+      "Tracking multiple stakeholders and their individual influence levels inside a single account",
+      "Enforcing sales representatives to follow a strict qualification process (e.g., MEDDPICC)"
+    ]
+  },
+  "gap_analysis": {
+    "existing_solution_types": [
+      "Generalist CRM templates",
+      "Basic Kanban pipeline boards",
+      "Enterprise SaaS CRMs"
+    ],
+    "common_features": [
+      "Contact name and email fields",
+      "Simple deal stage pipeline",
+      "Basic activity log notes"
+    ],
+    "overserved_features": [
+      "Mass cold email sequencing",
+      "Generic lead scoring models",
+      "Complex API configurations"
+    ],
+    "underserved_needs": [
+      "Structural Account-Based Stakeholder mapping",
+      "Bespoke discovery playbooks connected directly to the deal record",
+      "Enterprise-grade qualification frameworks (MEDDPICC) baked into the interface",
+      "Value-based pricing calculators integrated with scoping",
+      "Post-sale project delivery handover automation"
+    ],
+    "market_gaps": [
+      "A sales-focused system that bridges the gap between high-ticket consultative selling, deep qualification, and seamless agency execution handover."
+    ],
+    "opportunities": [
+      "Build a premium Notion engine that enforces MEDDPICC qualification, maps complex buying committees visually, and generates structured handoff documents for delivery teams instantly upon closing."
+    ]
+  },
+  "buyer_persona": {
+    "role": "Agency Founder / Managing Director",
+    "experience_level": "Advanced (5-10+ years in agency operations)",
+    "team_size": "5 to 30 team members",
+    "primary_goals": [
+      "Scale average contract value (ACV) from $10k to $50k+",
+      "Establish a repeatable, institutionalized sales process for AEs",
+      "Ensure highly accurate resource planning based on pipeline probability"
+    ],
+    "frustrations": [
+      "AEs proposing low-margin, high-maintenance custom work",
+      "Deals slipping away at the final hurdle because the 'Economic Buyer' was never engaged",
+      "Sloppy handovers resulting in clients repeating themselves to the delivery team"
+    ],
+    "buying_motivations": [
+      "Wants an out-of-the-box, premium system that enforces elite sales habits without paying thousands of dollars in monthly CRM subscription fees."
+    ]
+  },
+  "business_analysis": {
+    "core_workflows": [
+      "Account-Based Prospecting & Mapping",
+      "Consultative Discovery & Qualification (MEDDPICC)",
+      "Value-Based Proposal Engineering",
+      "Negotiation & Closing",
+      "Sales-to-Delivery Handover"
+    ],
+    "critical_events": [
+      "Discovery Call scheduled & executed",
+      "Buying Committee Map finalized",
+      "MEDDPICC Score Review",
+      "Proposal Pitch Meeting",
+      "Contract Signed & Closed-Won",
+      "Delivery Team Handover Meeting"
+    ],
+    "recurring_activities": [
+      "Daily active deal pipeline review",
+      "Weekly high-ticket deal qualification audit",
+      "Monthly pipeline velocity and win/loss analysis"
+    ],
+    "business_lifecycle": [
+      "Prospecting -> Qualifying -> Scoping -> Closing -> Onboarding -> Delivery"
+    ],
+    "dependencies": [
+      "Accurate stakeholder identification is required before drafting custom proposals",
+      "MEDDPICC score must cross a threshold before allocation of technical scoping resources"
+    ]
+  },
+  "systems_architecture": {
+    "core_systems": [
+      "Account-Based Sales Engine",
+      "MEDDPICC Qualification Matrix",
+      "Consultative Discovery Planner",
+      "Bespoke Proposal & SOW Constructor"
+    ],
+    "supporting_systems": [
+      "Stakeholder Mapping Board",
+      "Competitor Battle Card Repository",
+      "Value-Based Pricing Estimator"
+    ],
+    "management_systems": [
+      "Sales Representative Performance Hub",
+      "Sales-to-Delivery Handover Protocol"
+    ],
+    "reporting_systems": [
+      "Deal Velocity & Pipeline Forecast Analytics",
+      "Win/Loss Post-Mortem Register"
+    ],
+    "automation_opportunities": [
+      "Auto-calculate win probability based on MEDDPICC criteria completed",
+      "Instantly generate a Delivery Handover Document when deal stage changes to 'Closed-Won'"
+    ]
+  },
+  "database_architecture": {
+    "databases": [
+      {
+        "name": "Accounts (Target Organizations)",
+        "purpose": "To manage high-value target accounts and aggregate all associated contacts, deals, and notes."
+      },
+      {
+        "name": "Contacts & Buying Committee",
+        "purpose": "To map out stakeholders, their specific buying roles (e.g., Economic Buyer, Champion, Blocker), and influence level."
+      },
+      {
+        "name": "Deals & Opportunities",
+        "purpose": "The core pipeline tracking active opportunities, high-ticket values, stages, and MEDDPICC qualification health."
+      },
+      {
+        "name": "Discovery & Meeting Logs",
+        "purpose": "To capture structured notes, pain points, and requirements from key client interactions."
+      },
+      {
+        "name": "Proposals & SOWs",
+        "purpose": "To draft, version-control, and track bespoke scopes of work and pricing structures linked to deals."
+      },
+      {
+        "name": "Competitor Battlecards",
+        "purpose": "To store objection-handling strategies and counter-arguments against specific competitors."
+      }
+    ],
+    "properties": [
+      "Account Tier",
+      "Deal Value",
+      "MEDDPICC Score",
+      "Buying Role",
+      "Influence Level",
+      "Pipeline Stage",
+      "Target Close Date",
+      "Economic Buyer Identified (Checkbox)",
+      "Champion Identified (Checkbox)"
+    ],
+    "property_types": [
+      "Select",
+      "Number (Currency)",
+      "Formula (Percentage)",
+      "Select",
+      "Select",
+      "Select",
+      "Date",
+      "Checkbox",
+      "Checkbox"
+    ],
+    "relations": [
+      "Accounts <-> Deals",
+      "Accounts <-> Contacts",
+      "Deals <-> Contacts (Buying Committee)",
+      "Deals <-> Discovery Logs",
+      "Deals <-> Proposals",
+      "Deals <-> Competitor Battlecards"
+    ],
+    "rollups": [
+      "Account Total Pipeline Value (Rollup of Deal Value)",
+      "Number of Stakeholders Engaged (Rollup of Contacts)",
+      "Latest Discovery Session Date (Rollup of Discovery Logs)"
+    ],
+    "formulas": [
+      "MEDDPICC Completion Percentage: (toNumber(prop(\"Metrics\")) + toNumber(prop(\"Economic Buyer\")) + toNumber(prop(\"Decision Criteria\")) + toNumber(prop(\"Decision Process\")) + toNumber(prop(\"Identify Pain\")) + toNumber(prop(\"Paper Process\")) + toNumber(prop(\"Champion\")) + toNumber(prop(\"Competition\"))) / 8 * 100",
+      "Weighted Deal Value: prop(\"Deal Value\") * prop(\"Close Probability %\")",
+      "Deal Health Alert: if(and(prop(\"Deal Value\") > 50000, empty(prop(\"Champion\"))), \"⚠️ NO CHAMPION\", \"✅ Healthy\")"
+    ],
+    "views": [
+      "Account-Based Pipeline (Kanban)",
+      "MEDDPICC Risk Audit Board (List)",
+      "Buying Committee Matrix (Table)",
+      "Active Proposal Drafts (Gallery)",
+      "Delivery Handoff Queue (List)"
+    ]
+  },
+  "ux_architecture": {
+    "homepage_structure": [
+      "Metric Cards (Total Pipeline Value, Weighted Forecast, Win Rate)",
+      "Active Opportunities Kanban Pipeline",
+      "High-Risk Deals Sentinel (Dynamic filter showing deals missing Economic Buyers/Champions)",
+      "Today's High-Value Actions (Prospect follow-ups and proposal deadlines)",
+      "Quick-Capture Action Bar"
+    ],
+    "navigation_structure": [
+      "Sidebar: 🏛️ Command Center",
+      "Sidebar: 🎯 Target Accounts & Contacts",
+      "Sidebar: 🚀 Sales Pipeline (MEDDPICC)",
+      "Sidebar: 📝 Discovery & Meetings",
+      "Sidebar: 📄 Proposals & SOW Builder",
+      "Sidebar: 🧠 Competitive Intelligence",
+      "Sidebar: 📊 Win/Loss Analytics"
+    ],
+    "dashboard_hierarchy": [
+      "Level 1: Agency Command Center (Executive overview)",
+      "Level 2: Deal Command Center (Individual deal workspace showing related contacts, notes, and proposals)",
+      "Level 3: Account Profile (Deep-dive company context and history)"
+    ],
+    "daily_workflow": [
+      "Open Command Center, check High-Risk Deals Sentinel",
+      "Execute scheduled Discovery Calls using the embedded template",
+      "Update MEDDPICC checkboxes based on call insights",
+      "Follow up on proposals nearing target close dates"
+    ],
+    "weekly_review": [
+      "Review pipeline velocity with the team",
+      "Audit deals stalled in 'Proposal Sent' stage for > 14 days",
+      "Ensure all deals over $25k have a fully mapped Buying Committee"
+    ],
+    "monthly_review": [
+      "Analyze Win/Loss metrics to identify friction points",
+      "Update Competitor Battlecards based on recent sales cycles",
+      "Optimize value-based pricing formulas"
+    ],
+    "quick_actions": [
+      "➕ Quick Add New Account",
+      "📞 Log New Discovery Call",
+      "💼 Create New Deal Opportunity",
+      "📝 Draft SOW/Proposal"
+    ]
+  },
+  "power_features": {
+    "premium_modules": [
+      "Interactive MEDDPICC Deal Qualification Matrix",
+      "Account-Based Buying Committee Visual Mapper",
+      "Post-Sale Delivery Handover Blueprint Generator"
+    ],
+    "advanced_dashboards": [
+      "High-Value Deal Risk Sentinel Dashboard",
+      "Account Executive Performance & Close Velocity Board"
+    ],
+    "decision_support_tools": [
+      "Weighted Pipeline Forecast Calculator",
+      "Objection Handling Counter-Strategy Injector"
+    ],
+    "risk_management_tools": [
+      "Single Point of Failure Detector (Flags deals missing an Economic Buyer or Champion)",
+      "Stalled Deal Age Tracker (Calculates days spent in current stage)"
+    ],
+    "profit_optimization_tools": [
+      "Value-Based Pricing & Margin Safeguard Calculator"
+    ]
+  },
+  "product_strategy": {
+    "unique_selling_proposition": "The only Notion-based CRM built specifically for high-ticket agencies that merges enterprise-grade MEDDPICC qualification, account-based buying committee mapping, and post-sale delivery handoffs into a single high-performance engine.",
+    "positioning": "Premium, high-performance workspace for elite agency founders and AEs who sell five and six-figure services.",
+    "core_benefits": [
+      "Drastically increase contract values by shifting from hourly/retainer pricing to value-based pricing models.",
+      "Prevent deal slippage by identifying and engaging key decision-makers early.",
+      "Eliminate communication gaps between sales and delivery teams, ensuring a premium client experience from day one.",
+      "Enforce rigorous sales discipline across your team without paying for enterprise SaaS overhead."
+    ],
+    "customer_transformation": "From a chaotic, founder-led, low-ticket sales process to a structured, highly predictable, enterprise-grade account acquisition engine.",
+    "customer_outcomes": [
+      "35%+ Increase in Average Contract Value (ACV)",
+      "22% Reduction in Sales Cycle Length",
+      "100% Alignment between Sales and Project Delivery Teams"
+    ],
+    "premium_price_justification": [
+      "At $49, a single closed deal or avoided proposal-writing mistake pays for the template thousands of times over.",
+      "Saves hours of manual setup and custom database architecture in Notion.",
+      "Provides proprietary sales frameworks (MEDDPICC, Value-Based Pricing) built directly into the database logic."
+    ]
+  },
+  "notion_implementation": {
+    "required_pages": [
+      "Command Center",
+      "Account Directory",
+      "MEDDPICC Pipeline",
+      "Discovery Workspace",
+      "SOW & Proposal Studio",
+      "Enablement & Battlecards",
+      "Handoff Hub"
+    ],
+    "required_databases": [
+      "DB_Accounts",
+      "DB_Contacts",
+      "DB_Deals",
+      "DB_Meetings_Discovery",
+      "DB_Proposals",
+      "DB_Competitors"
+    ],
+    "required_templates": [
+      "Deep Discovery Session Template",
+      "MEDDPICC Deal Review Template",
+      "Bespoke SOW & Proposal Draft Template",
+      "Sales-to-Delivery Handover Protocol Template"
+    ],
+    "recommended_views": [
+      "Kanban Board grouped by Stage",
+      "List View filtered by High-Risk (Missing Champion or Economic Buyer)",
+      "Gallery View of active proposals with pricing rollups",
+      "Table View of Buying Committee grouped by Account"
+    ],
+    "notion_limitations": [
+      "Notion does not support native multi-variable conditional logic for complex pricing matrices natively without long, nested formulas.",
+      "Lack of native automated notification triggers when a deal stage changes."
+    ],
+    "recommended_workarounds": [
+      "Utilize clean Notion Formulas 2.0 to calculate complex risk and pricing variables in a readable format.",
+      "Provide step-by-step instructions for setting up a free Make.com blueprint to trigger Slack notifications on deal stage changes."
+    ]
+  },
+  "sales_assets": {
+    "product_name": "CloseRate Pro: High-Ticket Agency Sales Engine",
+    "headline": "Close $50k+ Agency Deals with Enterprise-Grade Precision.",
+    "subheadline": "Stop losing premium prospects to chaotic follow-ups. Map buying committees, score deals using MEDDPICC, and streamline sales-to-delivery handoffs inside a unified Notion workspace.",
+    "features": [
+      "Interactive MEDDPICC Deal Scorer & Risk Sentinel",
+      "Account-Based Buying Committee Mapper",
+      "Consultative Discovery Playbook & Notes Manager",
+      "Value-Based Pricing & Margin Safeguard Calculator",
+      "Automated Sales-to-Delivery Handover Protocol"
+    ],
+    "benefits": [
+      "Win larger deals by uncovering deep business pain points systematically.",
+      "Maintain absolute control over complex, multi-stakeholder sales cycles.",
+      "Protect your delivery margins from scope creep during the proposal phase.",
+      "Ensure a flawless client experience from contract signing to project kickoff."
+    ],
+    "frequently_asked_questions": [
+      {
+        "question": "Can this replace HubSpot or Salesforce?",
+        "answer": "Yes, for boutique and mid-sized agencies selling high-ticket services, CloseRate Pro provides a highly tailored, visually intuitive workspace without the $150+/month per user fee."
+      },
+      {
+        "question": "What is MEDDPICC and do I need to know it?",
+        "answer": "MEDDPICC is the gold standard enterprise sales qualification framework. CloseRate Pro has it built directly into the templates, guiding you step-by-step through every deal without needing prior training."
+      },
+      {
+        "question": "Does it support team collaboration?",
+        "answer": "Absolutely. Since it's built in Notion, you can assign AEs to deals, tag delivery leads for handovers, and collaborate in real-time."
+      }
+    ]
+  },
+  "screenshot_plan": [
+    {
+      "screenshot_title": "The Command Center Portal",
+      "screenshot_goal": "Showcase the premium, clean design and immediate accessibility of key pipeline metrics and urgent tasks.",
+      "screenshot_description": "A minimalist dashboard featuring custom-designed KPI cards, a visual Kanban pipeline of high-ticket deals, and a prioritized to-do list for the day."
+    },
+    {
+      "screenshot_title": "MEDDPICC Risk Audit Board",
+      "screenshot_goal": "Demonstrate the advanced formula-driven risk mitigation and deal qualification view.",
+      "screenshot_description": "A detailed list view of active deals showing calculated qualification percentages, highlighted missing elements (e.g., '⚠️ NO CHAMPION'), and dynamic risk levels."
+    },
+    {
+      "screenshot_title": "Account-Based Buying Committee Map",
+      "screenshot_goal": "Highlight the visual account-based stakeholder relationships.",
+      "screenshot_description": "A gallery view of contacts grouped by target accounts, labeled with roles like 'Economic Buyer', 'Champion', or 'Gatekeeper', alongside their influence levels."
+    }
+  ],
+  "product_packaging": {
+    "included_items": [
+      "CloseRate Pro Master Notion Template",
+      "6 Interconnected Core Databases",
+      "Pre-built MEDDPICC Qualification Matrix",
+      "Interactive Value-Based Pricing Calculator"
+    ],
+    "bonus_items": [
+      "The Elite Discovery Call Script Library",
+      "High-Ticket Agency SOW & Proposal Draft Template",
+      "Pre-built Make.com Slack Notification Blueprint"
+    ],
+    "documentation": [
+      "Comprehensive Video Walkthrough (Loom format)",
+      "Step-by-Step Setup Guide",
+      "Framework Guides (How to use MEDDPICC & Value-Based Pricing)"
+    ],
+    "onboarding_materials": [
+      "Interactive Quick-Start Checklist embedded inside the template homepage",
+      "Pre-populated demo data for immediate testing and understanding"
+    ]
+  },
+  "review": {
+    "quality_score": 10,
+    "market_fit_score": 10,
+    "uniqueness_score": 10,
+    "estimated_selling_price": "$49",
+    "missing_features": [
+      "Native calendar integration",
+      "Direct email correspondence logging"
+    ],
+    "recommendations": [
+      "Bundle with a 15-minute Loom audit of the buyer's current sales pipeline to increase perceived value",
+      "Publish an interactive setup guide on YouTube to drive organic search traffic"
+    ]
+  }
+}
