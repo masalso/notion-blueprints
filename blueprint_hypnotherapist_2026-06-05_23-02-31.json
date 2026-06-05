@@ -1,0 +1,213 @@
+{
+  "database_name": "DB_HYPNOTHERAPY_CLIENT_CRM",
+  "niche": "Hypnotherapist",
+  "description": "An advanced, comprehensive clinical CRM designed for solo hypnotherapists in the USA. This database tracks client onboarding, therapeutic goals, session counts, intake status, and custom self-hypnosis audio delivery, enabling a seamless, professional client management experience.",
+  "target_audience": "Solo Hypnotherapists, Clinical Hypnotists, and Mindset Coaches",
+  "complexity": "Advanced",
+  "properties": {
+    "client_name": {
+      "type": "title",
+      "description": "The legal and preferred name of the hypnotherapy client."
+    },
+    "status": {
+      "type": "select",
+      "options": [
+        {
+          "name": "Inquiry",
+          "color": "gray"
+        },
+        {
+          "name": "Onboarding",
+          "color": "orange"
+        },
+        {
+          "name": "Active Therapy",
+          "color": "blue"
+        },
+        {
+          "name": "Maintenance",
+          "color": "purple"
+        },
+        {
+          "name": "Completed",
+          "color": "green"
+        },
+        {
+          "name": "Discharged",
+          "color": "red"
+        }
+      ],
+      "description": "The current stage of the client's therapeutic journey."
+    },
+    "primary_issues": {
+      "type": "multi_select",
+      "options": [
+        {
+          "name": "Anxiety & Stress",
+          "color": "blue"
+        },
+        {
+          "name": "Smoking Cessation",
+          "color": "red"
+        },
+        {
+          "name": "Weight Management",
+          "color": "yellow"
+        },
+        {
+          "name": "Phobias & Fears",
+          "color": "purple"
+        },
+        {
+          "name": "Sleep & Insomnia",
+          "color": "indigo"
+        },
+        {
+          "name": "Confidence & Self-Esteem",
+          "color": "pink"
+        },
+        {
+          "name": "Sports Performance",
+          "color": "orange"
+        },
+        {
+          "name": "Regression Therapy",
+          "color": "brown"
+        }
+      ],
+      "description": "The core behavioral or psychological issues targeted for hypnotherapy."
+    },
+    "sessions_completed": {
+      "type": "number",
+      "description": "Total number of hypnotherapy sessions completed in the current treatment cycle."
+    },
+    "next_session": {
+      "type": "date",
+      "description": "Scheduled date and time for the next hypnotherapy or intake session."
+    },
+    "intake_and_consent": {
+      "type": "select",
+      "options": [
+        {
+          "name": "Not Sent",
+          "color": "red"
+        },
+        {
+          "name": "Sent / Pending",
+          "color": "yellow"
+        },
+        {
+          "name": "Signed & Completed",
+          "color": "green"
+        }
+      ],
+      "description": "Tracks the status of essential legal and medical intake forms required in the USA."
+    },
+    "treatment_plans_relation": {
+      "type": "relation",
+      "related_to": "DB_HYPNOTHERAPY_TREATMENT_PLANS",
+      "description": "Links this client to their customized clinical treatment plans and hypnotic scripts."
+    },
+    "session_logs_relation": {
+      "type": "relation",
+      "related_to": "DB_HYPNOTHERAPY_SESSION_LOGS",
+      "description": "Connects the client profile to detailed post-session clinical notes and behavioral observations."
+    },
+    "custom_recording_link": {
+      "type": "text",
+      "description": "Secure cloud link (e.g., Google Drive, Dropbox) to the client's custom self-hypnosis audio recordings for daily reinforcement."
+    },
+    "billing_status": {
+      "type": "select",
+      "options": [
+        {
+          "name": "Paid Package",
+          "color": "green"
+        },
+        {
+          "name": "Pay-As-You-Go",
+          "color": "blue"
+        },
+        {
+          "name": "Invoice Pending",
+          "color": "orange"
+        },
+        {
+          "name": "Unpaid/Overdue",
+          "color": "red"
+        }
+      ],
+      "description": "The financial and billing status of the client's current therapeutic package."
+    }
+  },
+  "sample_data": [
+    {
+      "client_name": "Sarah Jenkins",
+      "status": "Active Therapy",
+      "primary_issues": [
+        "Anxiety & Stress",
+        "Sleep & Insomnia"
+      ],
+      "sessions_completed": 3,
+      "next_session": {
+        "start": "2023-11-15T14:00:00.000-05:00"
+      },
+      "intake_and_consent": "Signed & Completed",
+      "treatment_plans_relation": "TP-88301-Jenkins",
+      "session_logs_relation": "SL-9920-Jenkins-S3",
+      "custom_recording_link": "https://drive.google.com/drive/folders/sarah-jenkins-anxiety-relief",
+      "billing_status": "Paid Package"
+    },
+    {
+      "client_name": "Marcus Vance",
+      "status": "Onboarding",
+      "primary_issues": [
+        "Smoking Cessation"
+      ],
+      "sessions_completed": 0,
+      "next_session": {
+        "start": "2023-11-17T10:00:00.000-05:00"
+      },
+      "intake_and_consent": "Sent / Pending",
+      "treatment_plans_relation": "TP-88302-Vance",
+      "session_logs_relation": "",
+      "custom_recording_link": "",
+      "billing_status": "Invoice Pending"
+    },
+    {
+      "client_name": "Dr. Eleanor Vance",
+      "status": "Maintenance",
+      "primary_issues": [
+        "Confidence & Self-Esteem",
+        "Sports Performance"
+      ],
+      "sessions_completed": 6,
+      "next_session": {
+        "start": "2023-11-30T16:30:00.000-05:00"
+      },
+      "intake_and_consent": "Signed & Completed",
+      "treatment_plans_relation": "TP-88280-Vance",
+      "session_logs_relation": "SL-9810-Vance-S6",
+      "custom_recording_link": "https://drive.google.com/drive/folders/eleanor-vance-peak-performance",
+      "billing_status": "Pay-As-You-Go"
+    }
+  ],
+  "architecture_tips": [
+    "HIPAA Compliance Warning: Since Notion is not natively HIPAA-compliant out of the box without an Enterprise plan and a signed BAA, avoid storing highly sensitive medical histories or raw psychiatric diagnoses directly in plain text. Use encrypted external links or coded client IDs (e.g., Client #88301) instead of full names if necessary.",
+    "Automate Intake via Notion Forms: Connect this database to Fillout, Tally, or Typeform. When a client submits their intake/consent form, it can automatically populate the 'client_name', 'primary_issues', and change 'intake_and_consent' to 'Signed & Completed'.",
+    "Template-Driven Session Notes: Create a page template inside this database for 'New Client Profile'. Inside the template, embed a filtered view of 'DB_HYPNOTHERAPY_SESSION_LOGS' showing only session notes related to this specific client for a unified clinical dashboard.",
+    "Resource Portal Integration: Create a separate public-facing Notion page for clients where you share general self-hypnosis guides, and use the 'custom_recording_link' property to dynamically share their unique audio files directly within their personalized portal."
+  ],
+  "formulas_explained": [
+    {
+      "name": "Session Progress Indicator",
+      "formula": "if(prop(\"sessions_completed\") == 0, \"⚪ Not Started\", if(prop(\"sessions_completed\") < 4, \"🌱 Initial Induction Stage\", if(prop(\"sessions_completed\") < 8, \"🌀 Deepening & Reconditioning\", \"✨ Integration & Maintenance\")))",
+      "purpose": "Provides visual, automated feedback on the client's progression through typical hypnotherapeutic stages based on the number of completed sessions, helping the solo practitioner quickly assess clinical trajectory."
+    },
+    {
+      "name": "Next Session Alert",
+      "formula": "if(empty(prop(\"next_session\")), \"⚠️ Schedule Next Session\", if(dateBetween(prop(\"next_session\"), now(), \"days\") == 0, \"🚨 Session is TODAY!\", if(dateBetween(prop(\"next_session\"), now(), \"days\") < 0, \"⚠️ Session Needs Archive/Update\", \"📅 in \" + format(dateBetween(prop(\"next_session\"), now(), \"days\")) + \" days\")))",
+      "purpose": "A dynamic scheduling assistant that alerts the therapist if a client has no scheduled session, if a session is today, or if a past session needs to be processed and logged."
+    }
+  ]
+}
